@@ -24,12 +24,14 @@ html, body {
   visibility: visible !important;
 }
 .logo_second {
-  margin: 0.5rem;
+
+  margin: 1rem auto 1.5rem auto !important;
   font-size: 2rem;
   font-weight: bold;
   color: rgb(191, 46, 15);
   visibility: visible !important;
   font-family: 'Gloria Hallelujah', cursive;
+
 }
 h1 {
   /* Offset for top bar */
@@ -64,48 +66,48 @@ h1 {
     margin-bottom: 20px;
 }
 #head_photo_img{
-	height: 100%;
-	text-align: center;
-	background-color: rgba(255, 242, 204, 0.3);
+  height: 100%;
+  text-align: center;
+  background-color: rgba(255, 242, 204, 0.3);
 }
 
 #bt1{
-	font-weight:bold;
-	font-family: 'Gloria Hallelujah', cursive;
+  font-weight:bold;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 #reason_box{
-	background-color: rgba(255, 242, 204, 0.6);
+  background-color: rgba(255, 242, 204, 0.6);
   line-height: 2rem;
-	width: 70%;
-	margin: 40px auto;
+  width: 70%;
+  margin: 40px auto;
 }
 #reason_box h1{
-	text-align: center;
-	font-family: 'Coming Soon', cursive;
-	margin: 0px auto;
+  text-align: center;
+  font-family: 'Coming Soon', cursive;
+  margin: 0px auto;
 }
 
 #container_body{
-	background-color: rgba(255, 242, 204, 0.6);
-	padding: 30px;
-	width: 70%;
-	margin: 40px auto;
+  background-color: rgba(255, 242, 204, 0.6);
+  padding: 30px;
+  width: 70%;
+  margin: 40px auto;
   line-height: 2rem;
 }
 
 #container_body h1{
-	margin: 30px auto;
-	font-family: 'Coming Soon', cursive;
-	font-weight: bold;
+  margin: 30px auto;
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold;
 }
 
 #step_box .step{
-	margin: 15px;
-	padding: 6px;
+  margin: 15px;
+  padding: 6px;
 }
 #step_box img{
   margin: 0px auto;
-	float: center;
+  float: center;
 
   background-attachment: fixed;
   background-position: center;
@@ -148,30 +150,30 @@ h1 {
 }
 
 #interested_box{
-	background-color: rgba(255, 242, 204, 0.3);
+  background-color: rgba(255, 242, 204, 0.3);
   line-height: 2rem;
 
 }
 #interested_box h1{
-	text-align: center;
-	font-family: 'Coming Soon', cursive;
-	margin: 0px ;
+  text-align: center;
+  font-family: 'Coming Soon', cursive;
+  margin: 0px ;
 }
 
 #footer{
-	background-image: url("../images/book1.jpg");
+  background-image: url("../images/book1.jpg");
   position: relative;
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #footer_img{
-	height: 100%;
-	text-align: center;
-	background-color: rgba(255, 242, 204, 0.5);
+  height: 100%;
+  text-align: center;
+  background-color: rgba(255, 242, 204, 0.5);
 }
 #saying {
   font-family: 'Dancing Script', cursive;
