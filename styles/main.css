@@ -125,16 +125,26 @@ h1 {
         background-attachment: scroll;
     }
     #Ti h1{
-      font-size: 8rem !important;
+      font-size: 6rem !important;
     }
     #Ti h2{
-      font-size: 2rem !important;
+      font-size: 1.5rem !important;
     }
     html, body{
-      font-size: 7px !important;
+      font-size: 11px !important;
     }
-    
-
+    #reason_box{
+      
+      width: 95%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    #container_body{
+      
+      width: 95%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
 }
 @media (max-width: 970px){
     .head_photo{
