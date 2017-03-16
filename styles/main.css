@@ -139,14 +139,13 @@ h1 {
     #reason_box{
       
       width: 95%;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      
+      margin-right: 1rem auto;
     }
     #container_body{
       
       width: 95%;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-right: 1rem auto;
     }
 }
 @media (max-width: 970px){
