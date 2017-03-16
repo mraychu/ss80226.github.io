@@ -79,7 +79,7 @@ h1 {
 }
 #reason_box{
   background-color: rgba(255, 242, 204, 0.6);
-  line-height: 2rem;
+  line-height: 2.5rem;
   width: 70%;
   margin: 40px auto;
 }
@@ -94,7 +94,7 @@ h1 {
   padding: 30px;
   width: 70%;
   margin: 40px auto;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 #container_body h1{
@@ -178,7 +178,7 @@ h1 {
 
 #interested_box{
   background-color: rgba(255, 242, 204, 0.3);
-  line-height: 2rem;
+  line-height: 2.5rem;
 
 }
 #interested_box h1{
