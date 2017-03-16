@@ -204,6 +204,7 @@ h1 {
 }
 #saying {
   font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
 }
 #saying-name {
   float: right;
