@@ -4,7 +4,9 @@ html, body {
     background: rgba(242, 180, 121, 0.4);
     font-size: 20px;
 }
-
+p{
+  font-size: 1.5rem !important;
+}
 /* Top bar */
 #nav_bar {
   width: 100%;
@@ -120,6 +122,7 @@ h1 {
 #saying-name {
   font-size: 3rem;
 }
+
 @media (max-width: 575px){
     .head_photo{
         background-attachment: scroll;
@@ -205,4 +208,5 @@ h1 {
 #saying-name {
   float: right;
   font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
 }
