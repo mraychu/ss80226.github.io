@@ -51,23 +51,45 @@
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
+				<div class="modal-header" style="background-color:RoyalBlue; color:white;">
 					<h5 class="modal-title" id="exampleModalLabel">Notify me when available</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
+				<!-- Form body -->
 				<div class="modal-body">
-					<form>
-					  Nickname:<br>
-					  <input type="text" name="firstname"><br>
-					  e-mail:<br>
-					  <input type="text" name="lastname">
-					</form>
+					<form id="gform" method="get" class="pure-form pure-form-stacked"
+				  action="https://script.google.com/macros/s/AKfycbzwOQWXRF-6HpPWPxEsWUGAN9RdqWDXrafB3yIHGZdv3XcjHw4/exec">
+				    <!-- change the form action to your script url -->
+
+				    <fieldset>
+				      <label for="name">Your name: </label> <br />
+				      <input id="name" name="name" />
+				    </fieldset>
+
+						<br />
+
+				    <fieldset>
+				      <label for="email">Email Address:</label> <br />
+				      <input id="email" name="email" type="email" value=""
+				      required />
+				      <span id="email-invalid" style="visibility:hidden">
+				        Must be a valid email address</span>
+				    </fieldset>
+
+				  </form>
+
+				  <!-- Thank you message -->
+				  <div style="display:none;" id="thankyou_message">
+				    <h2><em>Thanks</em> for contacting us!
+				      We will get back to you soon!</h2>
+				  </div>
+
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+					<button type="button" class="btn btn-primary" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
 				</div>
 			</div>
 		</div>
@@ -195,6 +217,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="scripts/wow.min.js"></script>
+<script src="scripts/form-submission-handler.js"></script>
 <script>
   new WOW().init();
 </script>
