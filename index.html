@@ -58,39 +58,54 @@
 					</button>
 				</div>
 				<!-- Form body -->
-				<div class="modal-body">
-					<form id="gform" method="get" class="pure-form pure-form-stacked"
-				  action="https://script.google.com/macros/s/AKfycbzwOQWXRF-6HpPWPxEsWUGAN9RdqWDXrafB3yIHGZdv3XcjHw4/exec">
-				    <!-- change the form action to your script url -->
+				<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbzwOQWXRF-6HpPWPxEsWUGAN9RdqWDXrafB3yIHGZdv3XcjHw4/exec">
 
-				    <fieldset>
-				      <label for="name">Your name: </label> <br />
-				      <input id="name" name="name" />
-				    </fieldset>
+					<div class="modal-body">
 
-						<br />
+							Please leave your name and email.<br />
+							We will send email to you when this app finished.<br /><br />
 
-				    <fieldset>
-				      <label for="email">Email Address:</label> <br />
-				      <input id="email" name="email" type="email" value=""
-				      required />
-				      <span id="email-invalid" style="visibility:hidden">
-				        Must be a valid email address</span>
-				    </fieldset>
+					    <fieldset>
+					      <label for="name">Nickname: </label> <br />
+					      <input id="name" name="name" required/>
+					    </fieldset>
 
-				  </form>
+							<br />
 
-				  <!-- Thank you message -->
-				  <div style="display:none;" id="thankyou_message">
-				    <h2><em>Thanks</em> for contacting us!
-				      We will get back to you soon!</h2>
-				  </div>
+					    <fieldset>
+					      <label for="email">Email address:</label> <br />
+					      <input id="email" name="email" type="email" required />
+					    </fieldset>
 
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
-				</div>
+							<br />
+
+							<fieldset>
+					      <label for="message">Other thing to say (Not required):</label> <br />
+								<textarea id="message" name="message" rows="6" cols="40"
+					      placeholder="Tell us what's on your mind..."></textarea>
+					    </fieldset>
+
+					</div>
+
+					<!-- Thank you message -->
+					<div style="display:none;" id="thankyou_message">
+						<img id="thankyou_img" src="images/done.jpg">
+						<p id="thankyou_p">
+							Thanks for your attention!<br />
+							We will get back to you soon!<br />
+							If you have other opinions or advises, you can check our
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSceEgcQKPWklM9-5BZeOIPw-WW1bvnvhTIK6QGGNh8I0tdo2g/viewform?c=0&w=1" target="_blank">complete questionair</a>
+							for more details.
+						</p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
+					</div>
+
+
+				</form>
 			</div>
 		</div>
 	</div>
@@ -104,7 +119,7 @@
 		    	<h2  data-wow-duration="0.8s" data-wow-delay="1.4s" class="wow fadeInUp lead banner-text">Take your phone out, then easily find the book!</h2>
 		    	<br>
 					<!-- Button trigger modal -->
-					<button type="button" data-wow-duration="0.6s" data-wow-delay="2s" class="wow tada btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+					<button type="button" data-wow-duration="0.6s" data-wow-delay="2s" class="wow tada btn btn-outline-primary btn-lg notify-btn" data-toggle="modal" data-target="#exampleModal">
 					  <i class="fa fa-bullhorn" aria-hidden="true"></i> Notify me when available
 					</button>
 			</div>
@@ -188,7 +203,7 @@
 					An email address is enough.<br />
 				<br>
 				</p>
-				<button type="button" data-wow-iteration="1024" data-wow-duration="2.5s" class="wow pulse btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+				<button type="button" data-wow-iteration="1024" data-wow-duration="2.5s" class="wow pulse btn btn-outline-primary btn-lg notify-btn" data-toggle="modal" data-target="#exampleModal">
 					<i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;Notify me when available
 				</button>
 			</div>

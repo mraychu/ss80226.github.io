@@ -1,18 +1,8 @@
 /*
-  This program is copied from https://github.com/dwyl/html-form-send-email-via-google-script-without-server
+  This program is mostly copied from https://github.com/dwyl/html-form-send-email-via-google-script-without-server
   Check their tutorial for more detail.
 */
 
-function validEmail(email) { // see:
-  //var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  //return re.test(email);
-  /******************************************-*******
-  ***************************************************
-  ** NEVER test whether email is valid...NEVER!!!! **
-  ***************************************************
-  ***************************************************/
-  return true;
-}
 // get all data in form and return object
 function getFormData() {
   var elements = document.getElementById("gform").elements; // all form elements
@@ -48,26 +38,27 @@ function getFormData() {
       }
     }
   });
-  console.log(data);
+  //console.log(data);
   return data;
 }
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
-  var form = document.getElementById('gform');
+  var body = document.querySelector('.modal-body');
   var formButton = document.getElementById('form-submit');
   var data = getFormData();         // get the values submitted in the form
-  var url = form.action;  //
+  var url = event.target.action;
   var xhr = new XMLHttpRequest();
-  form.style.display = 'none'; // hide form
+  body.style.display = 'none'; // hide form
   formButton.style.display= "none";
   document.getElementById('thankyou_message').style.display = 'block';
+  document.querySelector(".modal-title").textContent="DONE!";
   xhr.open('post', url);
   // xhr.withCredentials = true;
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   xhr.onreadystatechange = function() {
-      console.log( xhr.status, xhr.statusText );
-      console.log(xhr.responseText);
+      //console.log( xhr.status, xhr.statusText );
+      //console.log(xhr.responseText);
       return;
   };
   // url encode form data for sending as post data
@@ -76,10 +67,24 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }).join('&');
   xhr.send(encoded);
 }
-function loaded() {
-  console.log('contact form submission handler loaded successfully');
-  // bind to the submit event of our form
-  var formButton = document.getElementById('form-submit');
-  formButton.addEventListener("click", handleFormSubmit, false);
+
+function initForm(event) {
+  document.querySelector(".modal-title").textContent="Notify me when available";
+  document.querySelector('.modal-body').style.display = 'block';
+  document.getElementById('form-submit').style.display = 'inline';
+  document.getElementById('thankyou_message').style.display = 'none';
 }
-document.addEventListener('DOMContentLoaded', loaded, false);
+
+function loaded() {
+  //console.log('contact form submission handler loaded successfully');
+  // bind to the submit event of our form
+  var form = document.getElementById('gform');
+  var notify = document.querySelectorAll('.notify-btn');
+  form.addEventListener("submit", handleFormSubmit, false);
+  for (let i = 0; i<notify.length; i++) {
+    btn=notify[i];
+    btn.addEventListener("click",initForm);
+  }
+}
+
+window.onload = loaded;
