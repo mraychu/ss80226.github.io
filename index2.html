@@ -5,16 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="styles/main_t.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" href="styles/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Gloria+Hallelujah" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/earlyaccess/cwtexkai.css" rel = "stylesheet">
-	<link href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css" rel = "stylesheet">
-	
 	<link rel="Shortcut Icon" type="image/x-icon" href="images/L.ico">
 	<title> Librarian| Your mobile library</title>
 </head>
@@ -33,21 +30,21 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#reason_title">原因</a>
+	        <a class="nav-link" href="#reason_title">Why</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#step_title">特色</a>
+	        <a class="nav-link" href="#step_title">Features</a>
 	      </li>
 			<li class="nav-item">
-	        <a class="nav-link" href="#contact_title">聯絡我們</a>
+	        <a class="nav-link" href="#contact_title">Contact us</a>
 	      </li>
 	    </ul>
 			<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="./index2.html">English</a>
+				<a class="nav-link" href="./index.html">中文</a>
 			</li>
 				<li class="nav-item">
-				    <a class="nav-link" href="#footer">關於</a>
+				    <a class="nav-link" href="#footer">About</a>
 				</li>
 				
 			</ul>
@@ -59,7 +56,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header" style="background-color:RoyalBlue; color:white;">
-					<h5 class="modal-title" id="exampleModalLabel">上架時提醒我</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Notify me when available</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -69,27 +66,27 @@
 
 					<div class="modal-body">
 
-							請留下您的電子信箱<br />
-							我們將在APP上架時提醒您<br /><br />
+							Please leave your name and email.<br />
+							We will send email to you when this app finished.<br /><br />
 
 					    <fieldset>
-					      <label for="name">稱呼： </label> <br />
+					      <label for="name">Nickname: </label> <br />
 					      <input id="name" name="name" required/>
 					    </fieldset>
 
 							<br />
 
 					    <fieldset>
-					      <label for="email">電子信箱：</label> <br />
+					      <label for="email">Email address:</label> <br />
 					      <input id="email" name="email" type="email" required />
 					    </fieldset>
 
 							<br />
 
 							<fieldset>
-					      <label for="message">想說的話：（非必要）</label> <br />
+					      <label for="message">Other thing to say (Not required):</label> <br />
 								<textarea id="message" name="message" rows="6" cols="40"
-					      placeholder="跟我們分享您的想法"></textarea>
+					      placeholder="Tell us what's on your mind..."></textarea>
 					    </fieldset>
 
 					</div>
@@ -98,17 +95,17 @@
 					<div style="display:none;" id="thankyou_message">
 						<img id="thankyou_img" src="images/done.jpg">
 						<p id="thankyou_p">
-							謝謝您的幫忙！<br />
-							我們會盡快回復您<br />
-							若您有其他看法，請查閱：
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSceEgcQKPWklM9-5BZeOIPw-WW1bvnvhTIK6QGGNh8I0tdo2g/viewform?c=0&w=1" target="_blank">意見單</a>
-							來幫助我們
+							Thanks for your attention!<br />
+							We will get back to you soon!<br />
+							If you have other opinions or advises, you can check our
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSceEgcQKPWklM9-5BZeOIPw-WW1bvnvhTIK6QGGNh8I0tdo2g/viewform?c=0&w=1" target="_blank">complete questionair</a>
+							for more details.
 						</p>
 					</div>
 
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">離開</button>
-						<button type="submit" class="btn btn-primary" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;送出</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
 					</div>
 
 
@@ -123,12 +120,11 @@
 			<div></div>
 			<div id="Ti">
 				<h1 data-wow-duration="0.8s" data-wow-delay="0.8s" class="wow fadeInUp display-4 banner-text">Librarian</h1>
-				<br>
-		    	<h2  data-wow-duration="0.8s" data-wow-delay="1.4s" class="wow fadeInUp lead banner-text">找書，隨心所欲！</h2>
+		    	<h2  data-wow-duration="0.8s" data-wow-delay="1.4s" class="wow fadeInUp lead banner-text">Take your phone out, then easily find the book!</h2>
 		    	<br>
 					<!-- Button trigger modal -->
 					<button type="button" data-wow-duration="0.6s" data-wow-delay="2s" class="wow tada btn btn-outline-primary btn-lg notify-btn" data-toggle="modal" data-target="#exampleModal">
-					  <i class="fa fa-bullhorn" aria-hidden="true"></i> 上架時提醒我
+					  <i class="fa fa-bullhorn" aria-hidden="true"></i> Notify me when available
 					</button>
 			</div>
 			<div></div>
@@ -136,17 +132,16 @@
 	</header>
 
 	<div id="reason_box" class="jumbotron">
-		<h1 id="reason_title" class="display-3">為甚麼選擇 Librarian？</h1>
+		<h1 id="reason_title" class="display-3">Why use this</h1>
 		<br />
 		<hr class="my-4">
 		<p class="lead" align="center">
-			試想，你在書店裡看見一本很吸引你的書， <br />
-			而你很想知道它是否能在你常去的圖書館借閱。<br />
-			不過等等，你必須先拿出手機；打開網頁；查詢所有你可能光顧的圖書館的網頁<br />
-			這也太擾人了，是吧？<br/>		
-			有了 Librarian ，你只需要一個動作便能得到所有你想要的資訊<br />
+			Think about one day you find an interesting book in a bookstore, <br />
+			and want to check whether the same copy is in the nearby libraries or not.<br />
+			But wait, it's so bothering to visit those libraries' webpage one by one! isn't it?<br />
+			This is why we build this app, which collects ALL those infomation for you, in just ONE page! with just ONE click!<br />
 
-			<div class="logo_second " align="center">Librarian，你的行動圖書館！</div>
+			<div class="logo_second " align="center">Librarian, your mobile library !</div>
 
 		</p>
 		<div id="why_img"><img class="img-fluid" src="images/why.jpg"></div>
@@ -157,12 +152,12 @@
 
 
 		<div id="step_box">
-			<div id="step_title"><h1>瞧瞧它如何幫助您！</h1></div>
+			<div id="step_title"><h1>See what you can do with this app !</h1></div>
 
 			<hr>
 			<div id="step_1" class="wow fadeInLeftBig row justify-content-center align-items-center step">
 				<div class="col-12 col-sm-7">
-					<p class="step_explanation">打開程式</p>
+					<p class="step_explanation"><span class="first_word">First</span>, open this app on your phone.</p>
 				</div>
 				<div class="col-12 col-sm-5">
 					<img class="mg-fluid" src="images/step1.jpg" >
@@ -172,7 +167,7 @@
 			<hr>
 			<div id="step_2" class="wow fadeInLeftBig row justify-content-center flex-sm-row-reverse align-items-center step">
 				<div class="col-12 col-sm-7">
-					<p class="step_explanation">掃描 ISBN 書碼</p>
+					<p class="step_explanation"><span class="first_word">Then </span>click the ISBN scaner button and<br /> scan the ISBN barcode on the book.</p>
 				</div>
 				<div class="col-12 col-sm-5">
 					<img class="mg-fluid" src="images/step2.jpg">
@@ -181,7 +176,7 @@
 			<hr>
 			<div id="step_3" class="wow fadeInLeftBig row justify-content-center align-items-center step">
 				<div class="col-12 col-sm-7">
-					<p class="step_explanation">得知你常去的圖書館是否有館藏，以及是否被借走<br/> <span class="emphasis">就是這麼簡單！</span></p>
+					<p class="step_explanation"><span class="first_word">Get </span>the information about the book and<br /> its presence in nearby libraries.<br/> <span class="emphasis">Simple like this!</span></p>
 				</div>
 				<div class="col-12 col-sm-5">
 					<img class="mg-fluid" src="images/step3.jpg">
@@ -191,29 +186,29 @@
 		</div>
 	</div>
 	<div id="interested_box" class="jumbotron text-center">
-		<h1 id="contact_title" class="display-3">若您感到有興趣！</h1>
+		<h1 id="contact_title" class="display-3">If you are interested !</h1>
 		<div>
 			<br>
 			<p class="lead">
-				跟我們分享你的看法！<br />
-				所您有時間且願意助我們一臂之力<br />
-				請填寫以下意見單<br />
-				這只需要花費您些許時間但卻能給我們極大的幫助
+				You can share your idea with us!<br />
+				If you have time and want to help us,<br />
+				please finish the following sheet. <br />
+				It just takes you a few minutes and will absolutely help us a lot!
 			</p>
 			<br>
-			<a id="bt2" data-wow-iteration="1024" data-wow-duration="2.4s" class="wow pulse btn btn-outline-primary btn-lg" href="https://goo.gl/forms/0G3mo8esDm3n3mnc2" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;填問卷</a>
+			<a id="bt2" data-wow-iteration="1024" data-wow-duration="2.4s" class="wow pulse btn btn-outline-primary btn-lg" href="https://goo.gl/forms/0G3mo8esDm3n3mnc2" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;Click here to get to the sheet</a>
 		</div>
 		<hr class="my-4">
 			<div>
 				<p class="lead">
-					若您對這APP有興趣<br />
-					我們將會在他上架時提醒您<br />
-					您將不需要提供任何個資<br />
-					只需要填寫您的E-mail讓我們知道如何聯絡您<br />
+					Or if you're just interested in this app,<br />
+					we can notify you when this app is available in the appstore.<br />
+					You don't have to give any personal information.<br />
+					An email address is enough.<br />
 				<br>
 				</p>
 				<button type="button" data-wow-iteration="1024" data-wow-duration="2.5s" class="wow pulse btn btn-outline-primary btn-lg notify-btn" data-toggle="modal" data-target="#exampleModal">
-					<i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;上架時提醒我
+					<i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;Notify me when available
 				</button>
 			</div>
 	</div>

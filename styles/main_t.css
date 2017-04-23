@@ -3,10 +3,10 @@ html, body {
     height: 100%;
     background: rgba(242, 180, 121, 0.4);
     font-size: 20px;
-    
 }
 p{
   font-size: 1.5rem !important;
+  font-family: 'cwTeXKai', serif !important;
 }
 /* Top bar */
 .lan{
@@ -37,7 +37,7 @@ p{
   font-weight: bold;
   color: rgb(191, 46, 15);
   visibility: visible !important;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'cwTeXFangSong', serif;
 
 }
 h1 {
@@ -91,7 +91,7 @@ h1 {
 
 #bt1{
   font-weight:bold;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'cwTeXFangSong', serif;
 }
 #reason_box{
   background-color: rgba(255, 242, 204, 0.6);
@@ -101,7 +101,7 @@ h1 {
 }
 #reason_box h1{
   text-align: center;
-  font-family: 'Coming Soon', cursive;
+  font-family: 'cwTeXFangSong', serif;
   margin: 0px auto;
 }
 
@@ -115,7 +115,7 @@ h1 {
 
 #container_body h1{
   margin: 30px auto;
-  font-family: 'Coming Soon', cursive;
+  font-family: 'cwTeXFangSong', serif;
   font-weight: bold;
 }
 
@@ -198,7 +198,7 @@ h1 {
 }
 #interested_box h1{
   text-align: center;
-  font-family: 'Coming Soon', cursive;
+  font-family: 'cwTeXFangSong', serif;
   margin: 0px ;
 }
 
